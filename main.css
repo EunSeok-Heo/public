@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+  font-family: 'Gowun Dodum', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue : #1363DF;
+  --white : #DFF6FF;
+  --ligthblue : #47B5FF;
+  --deepblue : #06283D;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--white);
+}
+
+.contaiber {
+  position: relative;
+  width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  width: 210px;
+  height: 100%;
+  background: var(--blue);
+  border-left: 10px solid var(--blue);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.navigation.active {
+  width: 75px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background: var(--white);
+}
+
+
+.navigation ul li:nth-child(1){
+  margin-top: 40px;
+  position: relative;
+}
+
+
+.navigation ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
+  color: var(--blue);
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.navigation ul li a .icon ion-icon {
+  font-size: 1.75em;
+}
+
+.navigation ul li a .title,
+.navigation ul li a .active {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--white);
+  pointer-events: none;
+}
+
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--white);
+  pointer-events: none;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 200px);
+  left: 210px;
+  min-height: 100vh;
+  background: var(--white);
+  transition: 0.5s;
+  justify-content: center;
+}
+
+.main.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+.cardBox {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 15px 25px 15px 15px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 15px
+}
+
+.cardBox .card {
+  position: relative;
+  background: var(--white);
+  border-radius: 5%;
+  box-shadow: 0 5px 15px var(--deepblue);
+  margin-top: 10px;
+}
+
+.details {
+  position: relative;
+  width: 100%;
+  padding: 15px 25px 15px 15px;;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+}
+
+.details .realtimedata {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 5px 15px var(--deepblue);
+  border-radius: 5px;
+}
+
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details table thead th {
+  font-weight: 600;
+}
+
+.details .realtimedata table tr {
+  border-bottom: 1px solid rgba(136, 136, 136, 0.301);
+  height: 40px;
+}
+
+.details .realtimedata table tr:last-child {
+  border-bottom: none;
+}
+
+.details .realtimedata table tbody tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+#number {
+  text-align: center;
+}
+
+#coin_symbol {
+  padding: 0 0 0 5px;
+  font-size: 16px;
+}
+
+.details .realtimedata table tr td {
+  text-align: left;
+}
+
+.details .realtimedata table tr td:last-child {
+  text-align: end;
+}
+
+.details .realtimedata table tr th:last-child {
+  text-align: end;
+  padding: 0 3% 0 0;
+}
+
+/* .table{
+	max-width: 1024px;
+  align-items: center;
+  border: solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+	text-align: "." center;
+
+}
+
+
+tr:hover{
+	background-color: rgb(202, 213, 208);
+}
+ */
+
+.coin_logo{
+	height: 16px;
+	width: 16px;
+	border-radius: 12px;
+}
+
+/* .table th {
+  cursor: pointer;
+}
+
+.table .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table .th-sort-asc::after,
+.table .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table .th-sort-asc,
+.table .th-sort-desc {
+  background: blue;
+}
+
+#coin_symbol {
+	text-align: left;
+}
+
+
+th {
+    text-align: center;
+}
+
+#number {
+    text-align: left;
+} */
+

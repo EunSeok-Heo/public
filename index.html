@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>KIMPRO</title>
+</head>
+
+<body>
+    <!-- 메뉴바 -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </span>
+                        <span class="title">메뉴접기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">KIMPRO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="calculator-outline"></ion-icon>
+                        </span>
+                        <span class="title">김프계산기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="title">뉴스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="film-outline"></ion-icon>
+                        </span>
+                        <span class="title">스토리</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="football-outline"></ion-icon>
+                        </span>
+                        <span class="title">스포츠</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="fitness-outline"></ion-icon>
+                        </span>
+                        <span class="title">연예</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 메인 -->
+    <div class="main">
+        <!-- 메인분할박스 -->
+        <div class="cardBox">
+            <div class="card">
+                <!-- TradingView Widget BEGIN 환율-->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "FX_IDC:USDKRW",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "kr",
+                    "dateRange": "1D",
+                    "colorTheme": "light",
+                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                    "isTransparent": false,
+                    "autosize": true,
+                    "largeChartUrl": ""
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+            <div class="card">
+                <!-- TradingView Widget BEGIN 나스닥-->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "FOREXCOM:NSXUSD",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "kr",
+                    "dateRange": "1D",   
+                    "colorTheme": "light",
+                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                    "isTransparent": false,
+                    "autosize": true,
+                    "largeChartUrl": ""
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+            <div class="card">
+                <!-- TradingView Widget BEGIN 비트코인 도미넌스 -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "CRYPTOCAP:BTC.D",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "kr",
+                    "dateRange": "1D",
+                    "colorTheme": "light",
+                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                    "isTransparent": false,
+                    "autosize": true,
+                    "largeChartUrl": ""
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+            <div class="card">
+                <!-- TradingView Widget BEGIN USDT -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "COINBASE:USDTUSD",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "kr",
+                    "dateRange": "1D",
+                    "colorTheme": "light",
+                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                    "isTransparent": false,
+                    "autosize": true,
+                    "largeChartUrl": ""
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+            <div class="card">
+                <!-- TradingView Widget BEGIN USDC -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "BINANCEUS:USDCUSD",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "kr",
+                    "dateRange": "1D",
+                    "colorTheme": "light",
+                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                    "isTransparent": false,
+                    "autosize": true,
+                    "largeChartUrl": ""
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    <!-- 테이블 시작 -->
+        <div class="details">
+            <div class="realtimedata">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>종목</th>
+                            <th>바이낸스</th>
+                            <th>입출금현황</th>
+                            <th>업비트</th>
+                            <th>입출금현황</th>
+                            <th>김치프리미엄</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="number">1</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/BTC.png' loading='lazy' alt='BTC logo'>&nbsp;BTC(비트코인)</td>
+                            <td id='BTC_binance'>Loding…</td>
+                            <td id='status_BTC_binance'>--</td>
+                            <td id='BTC_upbit'>Loding…</td>
+                            <td id='status_BTC_upbit'>--</td>
+                            <td id="kimp_BTC">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">2</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ETH.png' loading='lazy' alt='ETH logo'>&nbsp;ETH(이더리움)</td>
+                            <td id='ETH_binance'>Loding…</td>
+                            <td id='status_ETH_binance'>--</td>
+                            <td id='ETH_upbit'>Loding…</td>
+                            <td id='status_ETH_upbit'>--</td>
+                            <td id="kimp_ETH">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">3</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/BCH.png' loading='lazy' alt='BCH logo'>&nbsp;BCH(비트코인캐시)</td>
+                            <td id='BCH_binance'>Loding…</td>
+                            <td id='status_BCH_binance'>--</td>
+                            <td id='BCH_upbit'>Loding…</td>
+                            <td id='status_BCH_upbit'>--</td>
+                            <td id="kimp_BCH">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">4</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/AAVE.png' loading='lazy' alt='AAVE logo'>&nbsp;AAVE(에이브)</td>
+                            <td id='AAVE_binance'>Loding…</td>
+                            <td id='status_AAVE_binance'>--</td>
+                            <td id='AAVE_upbit'>Loding…</td>
+                            <td id='status_AAVE_upbit'>--</td>
+                            <td id="kimp_AAVE">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">6</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/SOL.png' loading='lazy' alt='SOL logo'>&nbsp;SOL(솔라나)</td>
+                            <td id='SOL_binance'>Loding…</td>
+                            <td id='status_SOL_binance'>--</td>
+                            <td id='SOL_upbit'>Loding…</td>
+                            <td id='status_SOL_upbit'>--</td>
+                            <td id="kimp_SOL">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">7</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/AVAX.png' loading='lazy' alt='AVAX logo'>&nbsp;AVAX(아발란체)</td>
+                            <td id='AVAX_binance'>Loding…</td>
+                            <td id='status_AVAX_binance'>--</td>
+                            <td id='AVAX_upbit'>Loding…</td>
+                            <td id='status_AVAX_upbit'>--</td>
+                            <td id="kimp_AVAX">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">8</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/BTG.png' loading='lazy' alt='BTG logo'>&nbsp;BTG(비트코인골드)</td>
+                            <td id='BTG_binance'>Loding…</td>
+                            <td id='status_BTG_binance'>--</td>
+                            <td id='BTG_upbit'>Loding…</td>
+                            <td id='status_BTG_upbit'>--</td>
+                            <td id="kimp_BTG">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">9</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ETC.png' loading='lazy' alt='ETC logo'>&nbsp;ETC(이더리움클래식)</td>
+                            <td id='ETC_binance'>Loding…</td>
+                            <td id='status_ETC_binance'>--</td>
+                            <td id='ETC_upbit'>Loding…</td>
+                            <td id='status_ETC_upbit'>--</td>
+                            <td id="kimp_ETC">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">10</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/AXS.png' loading='lazy' alt='AXS logo'>&nbsp;AXS(엑시인피니티)</td>
+                            <td id='AXS_binance'>Loding…</td>
+                            <td id='status_AXS_binance'>--</td>
+                            <td id='AXS_upbit'>Loding…</td>
+                            <td id='status_AXS_upbit'>--</td>
+                            <td id="kimp_AXS">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">11</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/NEO.png' loading='lazy' alt='NEO logo'>&nbsp;NEO(네오)</td>
+                            <td id='NEO_binance'>Loding…</td>
+                            <td id='status_NEO_binance'>--</td>
+                            <td id='NEO_upbit'>Loding…</td>
+                            <td id='status_NEO_upbit'>--</td>
+                            <td id="kimp_NEO">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">12</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/DOT.png' loading='lazy' alt='DOT logo'>&nbsp;DOT(폴카닷)</td>
+                            <td id='DOT_binance'>Loding…</td>
+                            <td id='status_DOT_binance'>--</td>
+                            <td id='DOT_upbit'>Loding…</td>
+                            <td id='status_DOT_upbit'>--</td>
+                            <td id="kimp_DOT">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">13</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ATOM.png' loading='lazy' alt='ATOM logo'>&nbsp;ATOM(코스모스아톰)</td>
+                            <td id='ATOM_binance'>Loding…</td>
+                            <td id='status_ATOM_binance'>--</td>
+                            <td id='ATOM_upbit'>Loding…</td>
+                            <td id='status_ATOM_upbit'>--</td>
+                            <td id="kimp_ATOM">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">14</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/LINK.png' loading='lazy' alt='LINK logo'>&nbsp;LINK(링크)</td>
+                            <td id='LINK_binance'>Loding…</td>
+                            <td id='status_LINK_binance'>--</td>
+                            <td id='LINK_upbit'>Loding…</td>
+                            <td id='status_LINK_upbit'>--</td>
+                            <td id="kimp_LINK">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">15</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/REP.png' loading='lazy' alt='REP logo'>&nbsp;REP(어거)</td>
+                            <td id='REP_binance'>Loding…</td>
+                            <td id='status_REP_binance'>--</td>
+                            <td id='REP_upbit'>Loding…</td>
+                            <td id='status_REP_upbit'>--</td>
+                            <td id="kimp_REP">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">16</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/WAVES.png' loading='lazy' alt='WAVES logo'>&nbsp;WAVES(웨이브)</td>
+                            <td id='WAVES_binance'>Loding…</td>
+                            <td id='status_WAVES_binance'>--</td>
+                            <td id='WAVES_upbit'>Loding…</td>
+                            <td id='status_WAVES_upbit'>--</td>
+                            <td id="kimp_WAVES">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">17</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/NEAR.png' loading='lazy' alt='NEAR logo'>&nbsp;NEAR(니어)</td>
+                            <td id='NEAR_binance'>Loding…</td>
+                            <td id='status_NEAR_binance'>--</td>
+                            <td id='NEAR_upbit'>Loding…</td>
+                            <td id='status_NEAR_upbit'>--</td>
+                            <td id="kimp_NEAR">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">18</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/QTUM.png' loading='lazy' alt='QTUM logo'>&nbsp;QTUM(퀀텀)</td>
+                            <td id='QTUM_binance'>Loding…</td>
+                            <td id='status_QTUM_binance'>--</td>
+                            <td id='QTUM_upbit'>Loding…</td>
+                            <td id='status_QTUM_upbit'>--</td>
+                            <td id="kimp_QTUM">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">19</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/OMG.png' loading='lazy' alt='OMG logo'>&nbsp;OMG(오미세고)</td>
+                            <td id='OMG_binance'>Loding…</td>
+                            <td id='status_OMG_binance'>--</td>
+                            <td id='OMG_upbit'>Loding…</td>
+                            <td id='status_OMG_upbit'>--</td>
+                            <td id="kimp_OMG">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">20</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/KAVA.png' loading='lazy' alt='KAVA logo'>&nbsp;KAVA(카바)</td>
+                            <td id='KAVA_binance'>Loding…</td>
+                            <td id='status_KAVA_binance'>--</td>
+                            <td id='KAVA_upbit'>Loding…</td>
+                            <td id='status_KAVA_upbit'>--</td>
+                            <td id="kimp_KAVA">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">21</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/FLOW.png' loading='lazy' alt='FLOW logo'>&nbsp;FLOW(플로우)</td>
+                            <td id='FLOW_binance'>Loding…</td>
+                            <td id='status_FLOW_binance'>--</td>
+                            <td id='FLOW_upbit'>Loding…</td>
+                            <td id='status_FLOW_upbit'>--</td>
+                            <td id="kimp_FLOW">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">22</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/KNC.png' loading='lazy' alt='KNC logo'>&nbsp;KNC(카이버네트워크)</td>
+                            <td id='KNC_binance'>Loding…</td>
+                            <td id='status_KNC_binance'>--</td>
+                            <td id='KNC_upbit'>Loding…</td>
+                            <td id='status_KNC_upbit'>--</td>
+                            <td id="kimp_KNC">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">23</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/XTZ.png' loading='lazy' alt='XTZ logo'>&nbsp;XTZ(테조스)</td>
+                            <td id='XTZ_binance'>Loding…</td>
+                            <td id='status_XTZ_binance'>--</td>
+                            <td id='XTZ_upbit'>Loding…</td>
+                            <td id='status_XTZ_upbit'>--</td>
+                            <td id="kimp_XTZ">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">24</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/MTL.png' loading='lazy' alt='MTL logo'>&nbsp;MTL(메탈)</td>
+                            <td id='MTL_binance'>Loding…</td>
+                            <td id='status_MTL_binance'>--</td>
+                            <td id='MTL_upbit'>Loding…</td>
+                            <td id='status_MTL_upbit'>--</td>
+                            <td id="kimp_MTL">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">25</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/THETA.png' loading='lazy' alt='THETA logo'>&nbsp;THETA(쎄다토큰)</td>
+                            <td id='THETA_binance'>Loding…</td>
+                            <td id='status_THETA_binance'>--</td>
+                            <td id='THETA_upbit'>Loding…</td>
+                            <td id='status_THETA_upbit'>--</td>
+                            <td id="kimp_THETA">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">26</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/EOS.png' loading='lazy' alt='EOS logo'>&nbsp;EOS(이로스)</td>
+                            <td id='EOS_binance'>Loding…</td>
+                            <td id='status_EOS_binance'>--</td>
+                            <td id='EOS_upbit'>Loding…</td>
+                            <td id='status_EOS_upbit'>--</td>
+                            <td id="kimp_EOS">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">27</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/SRM.png' loading='lazy' alt='SRM logo'>&nbsp;SRM(세럼)</td>
+                            <td id='SRM_binance'>Loding…</td>
+                            <td id='status_SRM_binance'>--</td>
+                            <td id='SRM_upbit'>Loding…</td>
+                            <td id='status_SRM_upbit'>--</td>
+                            <td id="kimp_SRM">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">28</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/CELO.png' loading='lazy' alt='CELO logo'>&nbsp;CELO(셀로)</td>
+                            <td id='CELO_binance'>Loding…</td>
+                            <td id='status_CELO_binance'>--</td>
+                            <td id='CELO_upbit'>Loding…</td>
+                            <td id='status_CELO_upbit'>--</td>
+                            <td id="kimp_CELO">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">29</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/SAND.png' loading='lazy' alt='SAND logo'>&nbsp;SAND(센드)</td>
+                            <td id='SAND_binance'>Loding…</td>
+                            <td id='status_SAND_binance'>--</td>
+                            <td id='SAND_upbit'>Loding…</td>
+                            <td id='status_SAND_upbit'>--</td>
+                            <td id="kimp_SAND">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">30</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/MANA.png' loading='lazy' alt='MANA logo'>&nbsp;MANA(디센트럴랜드)</td>
+                            <td id='MANA_binance'>Loding…</td>
+                            <td id='status_MANA_binance'>--</td>
+                            <td id='MANA_upbit'>Loding…</td>
+                            <td id='status_MANA_upbit'>--</td>
+                            <td id="kimp_MANA">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">31</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/GMT.png' loading='lazy' alt='GMT logo'>&nbsp;GMT(스테픈)</td>
+                            <td id='GMT_binance'>Loding…</td>
+                            <td id='status_GMT_binance'>--</td>
+                            <td id='GMT_upbit'>Loding…</td>
+                            <td id='status_GMT_upbit'>--</td>
+                            <td id="kimp_GMT">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">32</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/1INCH.png' loading='lazy' alt='1INCH logo'>&nbsp;1INCH(1인치네트워크)</td>
+                            <td id='INCH_binance'>Loding…</td>
+                            <td id='status_INCH_binance'>--</td>
+                            <td id='INCH_upbit'>Loding…</td>
+                            <td id='status_INCH_upbit'>--</td>
+                            <td id="kimp_1INCH">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">33</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ADA.png' loading='lazy' alt='ADA logo'>&nbsp;ADA(에이다)</td>
+                            <td id='ADA_binance'>Loding…</td>
+                            <td id='status_ADA_binance'>--</td>
+                            <td id='ADA_upbit'>Loding…</td>
+                            <td id='status_ADA_upbit'>--</td>
+                            <td id="kimp_ADA">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">34</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ENJ.png' loading='lazy' alt='ENJ logo'>&nbsp;ENJ(엔진코인)</td>
+                            <td id='ENJ_binance'>Loding…</td>
+                            <td id='status_ENJ_binance'>--</td>
+                            <td id='ENJ_upbit'>Loding…</td>
+                            <td id='status_ENJ_upbit'>--</td>
+                            <td id="kimp_ENJ">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">35</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/STRAX.png' loading='lazy' alt='STRAX logo'>&nbsp;STRAX(스트라티스)</td>
+                            <td id='STRAX_binance'>Loding…</td>
+                            <td id='status_STRAX_binance'>--</td>
+                            <td id='STRAX_upbit'>Loding…</td>
+                            <td id='status_STRAX_upbit'>--</td>
+                            <td id="kimp_STRAX">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">36</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/MATIC.png' loading='lazy' alt='MATIC logo'>&nbsp;MATIC(폴리곤)</td>
+                            <td id='MATIC_binance'>Loding…</td>
+                            <td id='status_MATIC_binance'>--</td>
+                            <td id='MATIC_upbit'>Loding…</td>
+                            <td id='status_MATIC_upbit'>--</td>
+                            <td id="kimp_MATIC">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">37</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/STORJ.png' loading='lazy' alt='STORJ logo'>&nbsp;STORJ(스토리지)</td>
+                            <td id='STORJ_binance'>Loding…</td>
+                            <td id='status_STORJ_binance'>--</td>
+                            <td id='STORJ_upbit'>Loding…</td>
+                            <td id='status_STORJ_upbit'>--</td>
+                            <td id="kimp_STORJ">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">38</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/SXP.png' loading='lazy' alt='SXP logo'>&nbsp;SXP(솔라)</td>
+                            <td id='SXP_binance'>Loding…</td>
+                            <td id='status_SXP_binance'>--</td>
+                            <td id='SXP_upbit'>Loding…</td>
+                            <td id='status_SXP_upbit'>--</td>
+                            <td id="kimp_SXP">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">39</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/PLA.png' loading='lazy' alt='PLA logo'>&nbsp;PLA(플레이댑)</td>
+                            <td id='PLA_binance'>Loding…</td>
+                            <td id='status_PLA_binance'>--</td>
+                            <td id='PLA_upbit'>Loding…</td>
+                            <td id='status_PLA_upbit'>--</td>
+                            <td id="kimp_PLA">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">40</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/STX.png' loading='lazy' alt='STX logo'>&nbsp;STX(스택스)</td>
+                            <td id='STX_binance'>Loding…</td>
+                            <td id='status_STX_binance'>--</td>
+                            <td id='STX_upbit'>Loding…</td>
+                            <td id='status_STX_upbit'>--</td>
+                            <td id="kimp_STX">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">41</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/PUNDIX.png' loading='lazy' alt='PUNDIX logo'>&nbsp;PUNDIX(펀디엑스)</td>
+                            <td id='PUNDIX_binance'>Loding…</td>
+                            <td id='status_PUNDIX_binance'>--</td>
+                            <td id='PUNDIX_upbit'>Loding…</td>
+                            <td id='status_PUNDIX_upbit'>--</td>
+                            <td id="kimp_PUNDIX">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">42</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ONG.png' loading='lazy' alt='ONG logo'>&nbsp;ONG(온톨로지가스)</td>
+                            <td id='ONG_binance'>Loding…</td>
+                            <td id='status_ONG_binance'>--</td>
+                            <td id='ONG_upbit'>Loding…</td>
+                            <td id='status_ONG_upbit'>--</td>
+                            <td id="kimp_ONG">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">43</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/XRP.png' loading='lazy' alt='XRP logo'>&nbsp;XRP(리플)</td>
+                            <td id='XRP_binance'>Loding…</td>
+                            <td id='status_XRP_binance'>--</td>
+                            <td id='XRP_upbit'>Loding…</td>
+                            <td id='status_XRP_upbit'>--</td>
+                            <td id="kimp_XRP">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">44</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/BAT.png' loading='lazy' alt='BAT logo'>&nbsp;BAT(베이직어텐션토큰)</td>
+                            <td id='BAT_binance'>Loding…</td>
+                            <td id='status_BAT_binance'>--</td>
+                            <td id='BAT_upbit'>Loding…</td>
+                            <td id='status_BAT_upbit'>--</td>
+                            <td id="kimp_BAT">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">45</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ALGO.png' loading='lazy' alt='ALGO logo'>&nbsp;ALGO(알고랜드)</td>
+                            <td id='ALGO_binance'>Loding…</td>
+                            <td id='status_ALGO_binance'>--</td>
+                            <td id='ALGO_upbit'>Loding…</td>
+                            <td id='status_ALGO_upbit'>--</td>
+                            <td id="kimp_ALGO">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">46</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ZRX.png' loading='lazy' alt='ZRX logo'>&nbsp;ZRX(제로엑스)</td>
+                            <td id='ZRX_binance'>Loding…</td>
+                            <td id='status_ZRX_binance'>--</td>
+                            <td id='ZRX_upbit'>Loding…</td>
+                            <td id='status_ZRX_upbit'>--</td>
+                            <td id="kimp_ZRX">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">47</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ICX.png' loading='lazy' alt='ICX logo'>&nbsp;ICX(아이콘)</td>
+                            <td id='ICX_binance'>Loding…</td>
+                            <td id='status_ICX_binance'>--</td>
+                            <td id='ICX_upbit'>Loding…</td>
+                            <td id='status_ICX_upbit'>--</td>
+                            <td id="kimp_ICX">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">48</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ONT.png' loading='lazy' alt='ONT logo'>&nbsp;ONT(온톨로지)</td>
+                            <td id='ONT_binance'>Loding…</td>
+                            <td id='status_ONT_binance'>--</td>
+                            <td id='ONT_upbit'>Loding…</td>
+                            <td id='status_ONT_upbit'>--</td>
+                            <td id="kimp_ONT">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">49</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/POLY.png' loading='lazy' alt='POLY logo'>&nbsp;POLY(폴리매쓰)</td>
+                            <td id='POLY_binance'>Loding…</td>
+                            <td id='status_POLY_binance'>--</td>
+                            <td id='POLY_upbit'>Loding…</td>
+                            <td id='status_POLY_upbit'>--</td>
+                            <td id="kimp_POLY">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">50</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ELF.png' loading='lazy' alt='ELF logo'>&nbsp;ELF(엘프)</td>
+                            <td id='ELF_binance'>Loding…</td>
+                            <td id='status_ELF_binance'>--</td>
+                            <td id='ELF_upbit'>Loding…</td>
+                            <td id='status_ELF_upbit'>--</td>
+                            <td id="kimp_ELF">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">51</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/CVC.png' loading='lazy' alt='CVC logo'>&nbsp;CVC(시빅)</td>
+                            <td id='CVC_binance'>Loding…</td>
+                            <td id='status_CVC_binance'>--</td>
+                            <td id='CVC_upbit'>Loding…</td>
+                            <td id='status_CVC_upbit'>--</td>
+                            <td id="kimp_CVC">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">52</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/XLM.png' loading='lazy' alt='XLM logo'>&nbsp;XLM(스텔라루멘)</td>
+                            <td id='XLM_binance'>Loding…</td>
+                            <td id='status_XLM_binance'>--</td>
+                            <td id='XLM_upbit'>Loding…</td>
+                            <td id='status_XLM_upbit'>--</td>
+                            <td id="kimp_XLM">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">53</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/CHZ.png' loading='lazy' alt='CHZ logo'>&nbsp;CHZ(칠리즈)</td>
+                            <td id='CHZ_binance'>Loding…</td>
+                            <td id='status_CHZ_binance'>--</td>
+                            <td id='CHZ_upbit'>Loding…</td>
+                            <td id='status_CHZ_upbit'>--</td>
+                            <td id="kimp_CHZ">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">54</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ARDR.png' loading='lazy' alt='ARDR logo'>&nbsp;ARDR(아더)</td>
+                            <td id='ARDR_binance'>Loding…</td>
+                            <td id='status_ARDR_binance'>--</td>
+                            <td id='ARDR_upbit'>Loding…</td>
+                            <td id='status_ARDR_upbit'>--</td>
+                            <td id="kimp_ARDR">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">55</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/WAXP.png' loading='lazy' alt='WAXP logo'>&nbsp;WAXP(왁스)</td>
+                            <td id='WAXP_binance'>Loding…</td>
+                            <td id='status_WAXP_binance'>--</td>
+                            <td id='WAXP_upbit'>Loding…</td>
+                            <td id='status_WAXP_upbit'>--</td>
+                            <td id="kimp_WAXP">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">56</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/HBAR.png' loading='lazy' alt='HBAR logo'>&nbsp;HBAR(헤데라)</td>
+                            <td id='HBAR_binance'>Loding…</td>
+                            <td id='status_HBAR_binance'>--</td>
+                            <td id='HBAR_upbit'>Loding…</td>
+                            <td id='status_HBAR_upbit'>--</td>
+                            <td id="kimp_HBAR">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">57</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/DOGE.png' loading='lazy' alt='DOGE logo'>&nbsp;DOGE(도지)</td>
+                            <td id='DOGE_binance'>Loding…</td>
+                            <td id='status_DOGE_binance'>--</td>
+                            <td id='DOGE_upbit'>Loding…</td>
+                            <td id='status_DOGE_upbit'>--</td>
+                            <td id="kimp_DOGE">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">58</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/TRX.png' loading='lazy' alt='TRX logo'>&nbsp;TRX(트론)</td>
+                            <td id='TRX_binance'>Loding…</td>
+                            <td id='status_TRX_binance'>--</td>
+                            <td id='TRX_upbit'>Loding…</td>
+                            <td id='status_TRX_upbit'>--</td>
+                            <td id="kimp_TRX">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">59</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/TFUEL.png' loading='lazy' alt='TFUEL logo'>&nbsp;TFUEL(세타퓨엘)</td>
+                            <td id='TFUEL_binance'>Loding…</td>
+                            <td id='status_TFUEL_binance'>--</td>
+                            <td id='TFUEL_upbit'>Loding…</td>
+                            <td id='status_TFUEL_upbit'>--</td>
+                            <td id="kimp_TFUEL">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">60</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/XEM.png' loading='lazy' alt='XEM logo'>&nbsp;XEM(넴)</td>
+                            <td id='XEM_binance'>Loding…</td>
+                            <td id='status_XEM_binance'>--</td>
+                            <td id='XEM_upbit'>Loding…</td>
+                            <td id='status_XEM_upbit'>--</td>
+                            <td id="kimp_XEM">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">61</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/STPT.png' loading='lazy' alt='STPT logo'>&nbsp;STPT(에스티피)</td>
+                            <td id='STPT_binance'>Loding…</td>
+                            <td id='status_STPT_binance'>--</td>
+                            <td id='STPT_upbit'>Loding…</td>
+                            <td id='status_STPT_upbit'>--</td>
+                            <td id="kimp_STPT">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">62</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/T.png' loading='lazy' alt='T logo'>&nbsp;T(쓰레스홀드)</td>
+                            <td id='T_binance'>Loding…</td>
+                            <td id='status_T_binance'>--</td>
+                            <td id='T_upbit'>Loding…</td>
+                            <td id='status_T_upbit'>--</td>
+                            <td id="kimp_T">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">63</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ZIL.png' loading='lazy' alt='ZIL logo'>&nbsp;ZIL(질리카)</td>
+                            <td id='ZIL_binance'>Loding…</td>
+                            <td id='status_ZIL_binance'>--</td>
+                            <td id='ZIL_upbit'>Loding…</td>
+                            <td id='status_ZIL_upbit'>--</td>
+                            <td id="kimp_ZIL">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">64</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/JST.png' loading='lazy' alt='JST logo'>&nbsp;JST(저스트)</td>
+                            <td id='JST_binance'>Loding…</td>
+                            <td id='status_JST_binance'>--</td>
+                            <td id='JST_upbit'>Loding…</td>
+                            <td id='status_JST_upbit'>--</td>
+                            <td id="kimp_JST">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">65</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/ANKR.png' loading='lazy' alt='ANKR logo'>&nbsp;ANKR(앵커)</td>
+                            <td id='ANKR_binance'>Loding…</td>
+                            <td id='status_ANKR_binance'>--</td>
+                            <td id='ANKR_upbit'>Loding…</td>
+                            <td id='status_ANKR_upbit'>--</td>
+                            <td id="kimp_ANKR">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">66</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/VET.png' loading='lazy' alt='VET logo'>&nbsp;VET(비체인)</td>
+                            <td id='VET_binance'>Loding…</td>
+                            <td id='status_VET_binance'>--</td>
+                            <td id='VET_upbit'>Loding…</td>
+                            <td id='status_VET_upbit'>--</td>
+                            <td id="kimp_VET">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">67</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/IOST.png' loading='lazy' alt='IOST logo'>&nbsp;IOST(아이오에스티)</td>
+                            <td id='IOST_binance'>Loding…</td>
+                            <td id='status_IOST_binance'>--</td>
+                            <td id='IOST_upbit'>Loding…</td>
+                            <td id='status_IOST_upbit'>--</td>
+                            <td id="kimp_IOST">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">68</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/MFT.png' loading='lazy' alt='MFT logo'>&nbsp;MFT(메인프레임)</td>
+                            <td id='MFT_binance'>Loding…</td>
+                            <td id='status_MFT_binance'>--</td>
+                            <td id='MFT_upbit'>Loding…</td>
+                            <td id='status_MFT_upbit'>--</td>
+                            <td id="kimp_MFT">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">69</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/MBL.png' loading='lazy' alt='MBL logo'>&nbsp;MBL(무비블록)</td>
+                            <td id='MBL_binance'>Loding…</td>
+                            <td id='status_MBL_binance'>--</td>
+                            <td id='MBL_upbit'>Loding…</td>
+                            <td id='status_MBL_upbit'>--</td>
+                            <td id="kimp_MBL">Processing...</td>
+                        </tr>
+                        <tr>
+                            <td id="number">70</td>
+                            <td id="coin_symbol"><img class='coin_logo' src='https://static.upbit.com/logos/XEC.png' loading='lazy' alt='XEC logo'>&nbsp;XEC(이캐시)</td>
+                            <td id='XEC_binance'>Loding…</td>
+                            <td id='status_XEC_binance'>--</td>
+                            <td id='XEC_upbit'>Loding…</td>
+                            <td id='status_XEC_upbit'>--</td>
+                            <td id="kimp_XEC">Processing...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+    <script type="module" src="config.js"></script>
+    <script src="kimpro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

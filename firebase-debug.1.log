@@ -1,0 +1,49 @@
+[debug] [2022-07-03T09:52:53.089Z] ----------------------------------------------------------------------
+[debug] [2022-07-03T09:52:53.091Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-07-03T09:52:53.091Z] CLI Version:   11.2.0
+[debug] [2022-07-03T09:52:53.091Z] Platform:      win32
+[debug] [2022-07-03T09:52:53.091Z] Node Version:  v16.15.1
+[debug] [2022-07-03T09:52:53.093Z] Time:          Sun Jul 03 2022 18:52:53 GMT+0900 (대한민국 표준시)
+[debug] [2022-07-03T09:52:53.093Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-03T09:52:53.154Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-03T09:52:53.154Z] > authorizing via signed-in user (hkyheo@gmail.com)
+[debug] [2022-07-03T09:52:53.154Z] [iam] checking project kimp-ro for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-03T09:52:53.157Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimp-ro:testIamPermissions [none]
+[debug] [2022-07-03T09:52:53.157Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimp-ro:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-03T09:52:53.904Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimp-ro:testIamPermissions 200
+[debug] [2022-07-03T09:52:53.904Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimp-ro:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-03T09:52:53.905Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimp-ro [none]
+[debug] [2022-07-03T09:52:54.298Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimp-ro 200
+[debug] [2022-07-03T09:52:54.298Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimp-ro {"projectId":"kimp-ro","projectNumber":"354623648716","displayName":"kimp-ro","name":"projects/kimp-ro","resources":{"hostingSite":"kimp-ro"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'kimp-ro'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-03T09:52:54.301Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimp-ro [none]
+[debug] [2022-07-03T09:52:54.679Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimp-ro 200
+[debug] [2022-07-03T09:52:54.679Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimp-ro {"projectId":"kimp-ro","projectNumber":"354623648716","displayName":"kimp-ro","name":"projects/kimp-ro","resources":{"hostingSite":"kimp-ro"},"state":"ACTIVE"}
+[debug] [2022-07-03T09:52:54.681Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/354623648716/sites/kimp-ro/versions [none]
+[debug] [2022-07-03T09:52:54.681Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/354623648716/sites/kimp-ro/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-03T09:52:55.828Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/354623648716/sites/kimp-ro/versions 200
+[debug] [2022-07-03T09:52:55.828Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/354623648716/sites/kimp-ro/versions {"name":"projects/354623648716/sites/kimp-ro/versions/0580d010e72f17cc","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[kimp-ro]: beginning deploy... 
+[debug] [2022-07-03T09:52:56.034Z] Error: EPERM: operation not permitted, scandir 'C:/websocket/test/public/firebase-debug.log'
+    at Object.readdirSync (node:fs:1405:3)
+    at GlobSync._readdir (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:285:46)
+    at GlobSync._readdirInGlobStar (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:242:17)
+    at GlobSync._readdir (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:273:17)
+    at GlobSync._processReaddir (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:134:22)
+    at GlobSync._process (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:129:10)
+    at GlobSync._processGlobStar (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:377:10)
+    at GlobSync._process (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:127:10)
+    at new GlobSync (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+    at listFiles (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:83:12)
+    at chain (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:15)
+    at deploy (C:\Users\USER1030\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
