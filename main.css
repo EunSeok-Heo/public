@@ -171,7 +171,7 @@ body {
   width: 100%;
   padding: 15px 25px 15px 15px;;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
 }
 
@@ -192,6 +192,7 @@ body {
 
 .details table thead th {
   font-weight: 600;
+  text-align: start;
 }
 
 .details .realtimedata table tr {
@@ -213,7 +214,7 @@ body {
 }
 
 #coin_symbol {
-  padding: 0 0 0 5px;
+  padding: 0 0 0 20px;
   font-size: 16px;
 }
 
@@ -221,33 +222,13 @@ body {
   text-align: left;
 }
 
-.details .realtimedata table tr td:last-child {
-  text-align: end;
+.details .realtimedata table tr th:nth-child(2) {
+  text-align: center;
 }
 
-.details .realtimedata table tr th:last-child {
-  text-align: end;
-  padding: 0 3% 0 0;
+.details .realtimedata table tr td:nth-child(2) {
+  padding: 0 20px 0 0;
 }
-
-/* .table{
-	max-width: 1024px;
-  align-items: center;
-  border: solid red;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-td{
-	text-align: "." center;
-
-}
-
-
-tr:hover{
-	background-color: rgb(202, 213, 208);
-}
- */
 
 .coin_logo{
 	height: 16px;
@@ -255,38 +236,27 @@ tr:hover{
 	border-radius: 12px;
 }
 
-/* .table th {
-  cursor: pointer;
+.rank {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 15px 25px 15px 15px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15px
 }
 
-.table .th-sort-asc::after {
-  content: "\25b4";
+.high {
+  background: var(--white);
+  border-radius: 5%;
+  box-shadow: 0 5px 15px var(--deepblue);
 }
 
-.table .th-sort-desc::after {
-  content: "\25be";
+.high span {
+  text-align: center;
 }
 
-.table .th-sort-asc::after,
-.table .th-sort-desc::after {
-  margin-left: 5px;
+.topCoin, .secCoin, .thrCoin {
+  width: 100%;
+  height: 50px;
 }
-
-.table .th-sort-asc,
-.table .th-sort-desc {
-  background: blue;
-}
-
-#coin_symbol {
-	text-align: left;
-}
-
-
-th {
-    text-align: center;
-}
-
-#number {
-    text-align: left;
-} */
-

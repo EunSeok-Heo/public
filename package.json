@@ -1,9 +1,14 @@
 {
   "dependencies": {
+    "api": "^4.5.1",
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.12",
     "iconv": "^3.0.1",
+    "node-upbit": "^1.1.0",
     "request": "^2.88.2",
-    "type": "module"
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.4"
   }
 }
